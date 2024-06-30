@@ -36,7 +36,7 @@
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end col-8" tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-end col-8 text-bg-dark" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HOME</h5>
@@ -45,16 +45,17 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="#carouselExampleAutoplaying">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="#">Quienes Somos</a>
+                            <a class="nav-link active text-white" href="#idQuienesomosscroll">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="#">Destacados</a>
+                            <a class="nav-link active text-white" href="#idCardscroll">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="#">Contacto</a>
+                            <a class="nav-link active text-white" href="#idFormscroll">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -95,7 +96,9 @@
         </div>
     </header>
     <section id="idQuienesomos">
-        <h3>¿QUIENES SOMOS?</h3>
+        <div id="idQuienesomosscroll" class="border-bottom m-4 p-4">
+            <h3>¿QUIENES SOMOS?</h3>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -138,11 +141,13 @@
         </div>
     </section>
     <section id="idCard">
-        <h3>DESTACADOS</h3>
+        <div id="idCardscroll" class="border-bottom m-4 p-4">
+            <h3>DESTACADOS</h3>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 16rem;">
                         <img src="viajes_chile/assets/img/card1.jpg" class="card-img-top" alt="card1">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -151,7 +156,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 16rem;">
                         <img src="viajes_chile/assets/img/card2.jpg" class="card-img-top" alt="card2">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -160,7 +165,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 16rem;">
                         <img src="viajes_chile/assets/img/card3.jpg" class="card-img-top" alt="card3">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -169,7 +174,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 16rem;">
                         <img src="viajes_chile/assets/img/card4.jpg" class="card-img-top" alt="card4">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -181,30 +186,37 @@
         </div>
     </section>
     <section id="idForm">
-        <h3>CONTACTO</h3>
+        <div id="idFormscroll" class="m-4 p-4 border-bottom">
+            <h3>CONTACTO</h3>
+        </div>
         <form>
-            <div class="mb-3">
+            <div class="m-4 p-2">
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                 <input type="Nombre" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
+            <div class="m-4 p-2">
                 <label for="exampleFormControlInput1" class="form-label">Asunto</label>
                 <input type="Asunto" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
+            <div class="m-4 p-2">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+                <div class="m-4 p-2">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right"
+                        title="Presione el boton enviar">enviar</button>
+                </div>
         </form>
     </section>
     <footer>
         <div class="container text-center">
             <div class="row">
                 <div class="col">
-                    <h3>VIAJES CHILE</h3>
+                    <div class="container m-4 p-2">
+                        <h3>VIAJES CHILE</h3>
+                    </div>
                 </div>
                 <div class="col">
-                    <div class="container text-center">
+                    <div class="container text-end flex-end m-4 p-2">
                         <div class="row">
                             <div class="col">
                                 <i class="fa-brands fa-github"></i>
