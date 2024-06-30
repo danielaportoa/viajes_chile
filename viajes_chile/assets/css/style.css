@@ -1,66 +1,76 @@
-body{
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: black;
 }
 
-nav{
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
     color: #ffffff;
     background-color: #57aeff;
     text-align: center;
 }
 
-nav img{
+nav img {
     width: 80%;
 }
 
-.carousel-inner{
+.carousel-inner {
     height: 500px;
 }
 
-#idQuienesomos{
-    background-color: black;
+#idQuienesomos {
     color: #ffffff;
     text-align: center;
-} 
+}
 
-p{
+@media screen and (max-width: 600px) {
+    #idQuienesomos {
+        display: none;
+    }
+}
+
+p {
     font-weight: 300;
 }
 
-i{
-    background-color: #57aeff;
-    width: 100%;
-    text-align: center;
-    padding: 4%;
-}
-
-#idCard{
-    background-color: black;
+#idCard {
     color: #ffffff;
     text-align: center;
-} 
+}
 
-.card{
+.card {
     background-color: #57aeff;
     color: #ffffff;
 }
 
-.card img{
+.card img {
     height: 200px;
 }
 
-#idForm{
+#idForm {
     background-color: black;
     color: #ffffff;
     text-align: center;
 }
 
-form{
+form {
     text-align: justify;
 }
 
-footer{
+footer {
     background-color: #57aeff;
     color: #ffffff;
+    vertical-align: middle;
+    font-weight: 100;
+}
+
+i {
+    background-color: #57aeff;
+    width: 100%;
+    font-size: 200%;
 }
